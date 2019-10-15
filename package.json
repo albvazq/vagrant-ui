@@ -1,0 +1,53 @@
+{
+  "name": "vigger",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "transpile": "tsc --build tsconfig.electron.json",
+    "start-dev": "npm run transpile && electron .",
+    "start": "electron ."
+  },
+  "main": "./dist/electron/main.js",
+  "dependencies": {
+    "@quasar/extras": "^1.0.0",
+    "@types/nedb": "^1.8.8",
+    "cheerio": "^1.0.0-rc.3",
+    "core-js": "^2.6.5",
+    "nedb": "^1.8.0",
+    "ps-tree": "^1.2.0",
+    "quasar": "^1.0.0",
+    "rxjs": "^6.5.2",
+    "sscanf": "^0.8.0",
+    "vue": "^2.6.10",
+    "vue-class-component": "^7.0.2",
+    "vue-property-decorator": "^8.1.0",
+    "vue-router": "^3.0.3"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.1.0",
+    "@types/cheerio": "^0.22.11",
+    "@types/dotenv": "^6.1.1",
+    "@types/electron": "^1.6.10",
+    "@types/mocha": "^5.2.4",
+    "@types/ps-tree": "^1.1.0",
+    "@types/request": "^2.48.1",
+    "@vue/cli-plugin-babel": "^3.12.0",
+    "@vue/cli-plugin-typescript": "^3.9.0",
+    "@vue/cli-plugin-unit-mocha": "^3.9.0",
+    "@vue/cli-service": "^3.9.0",
+    "@vue/test-utils": "1.0.0-beta.29",
+    "babel-plugin-transform-imports": "1.5.0",
+    "chai": "^4.1.2",
+    "dotenv": "^8.0.0",
+    "electron": "^5.0.6",
+    "node-sass": "^4.9.0",
+    "postcss-rtl": "^1.2.3",
+    "sass-loader": "^7.1.0",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^3.0.2",
+    "typescript": "^3.4.3",
+    "vue-cli-plugin-quasar": "^1.0.0",
+    "vue-template-compiler": "^2.6.10"
+  }
+}
